@@ -11,15 +11,19 @@ public class AbstractProduct implements IProduct {
 		this.description = desciption;
 	}
 	
+	@Override
 	public void setDescription(String desc) {
 		this.description = desc;
 	}
+	@Override
 	public String getDescription() {
 		return this.description;
 	}
+	@Override
 	public void setId(UUID id) {
 		this.id = id;
 	}
+	@Override
 	public UUID getId() {
 		return this.id;
 	}

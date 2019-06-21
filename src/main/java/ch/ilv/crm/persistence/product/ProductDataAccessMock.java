@@ -27,6 +27,7 @@ public class ProductDataAccessMock implements IProductDAO {
 	/**
 	 * @param customer The customer is the Data of an customer, saved in a String-Array
 	 */
+	@Override
 	public void insertProduct(ProductDTO product) {
 		this.products.add(product);
 	}
@@ -34,6 +35,7 @@ public class ProductDataAccessMock implements IProductDAO {
 	/**
 	 * @param productId The productId is the ID of the wanted Product
 	 */
+	@Override
 	public ProductDTO selectProduct(UUID productId) {
 		ProductDTO result = null;
 		
